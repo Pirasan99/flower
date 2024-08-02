@@ -19,7 +19,8 @@ body {
 }
 
 #rose {
-    width: 450px; /* Adjust the width to make the image bigger */
+    width: 150%; /* Adjust the width to be responsive */
+    max-width: 410px; /* Set a maximum width */
     height: auto; /* Maintain the aspect ratio */
     position: center;
     bottom: -50%; /* Start position below the screen */
@@ -49,5 +50,18 @@ body {
 @keyframes fadeIn {
     to {
         opacity: 1;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    #rose {
+        width: 70%; /* Increase the width for smaller screens */
+        max-width: none; /* Remove the maximum width */
+    }
+
+    #message1, #message2 {
+        font-size: 1.2em; /* Adjust the font size for smaller screens */
+        margin-top: 15px; /* Adjust the spacing */
     }
 }
