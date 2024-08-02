@@ -19,7 +19,7 @@ body {
 }
 
 #rose {
-    width: 150%; /* Adjust the width to be responsive */
+    width: 50%; /* Adjust the width to be responsive */
     max-width: 410px; /* Set a maximum width */
     height: auto; /* Maintain the aspect ratio */
     position: center;
